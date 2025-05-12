@@ -34,15 +34,10 @@ ml-modeling-diploma/
 ├── requirements.txt               # зависимости
 ├── run_experiments.py             # запуск всех экспериментов
 └── LICENSE                        # лицензия MIT
-Предварительные требования
+
 Python 3.8+
 
-pip для установки зависимостей
-
-Установка
-bash
-
-# 1. Клонируйте репозиторий
+# 1. Клонировать репозиторий
 git clone https://github.com/your-username/ml-modeling-diploma.git
 cd ml-modeling-diploma
 
@@ -50,7 +45,7 @@ cd ml-modeling-diploma
 python -m venv venv
 source venv/bin/activate   # в Windows: venv\Scripts\activate
 
-# 3. Установите зависимости
+# 3. Установить зависимости
 pip install -r requirements.txt
 Использование
 Запустить полный цикл экспериментов (обучение и оценка MLP и CNN на всех трёх датасетах) можно командой:
@@ -68,12 +63,7 @@ python run_experiments.py
 
 Генерирует графики и метрики в notebooks/.
 
-Для интерактивного изучения данных или результатов откройте ноутбук:
-
-jupyter notebook notebooks/exploratory_analysis.ipynb
 Зависимости
-Основные пакеты указаны в requirements.txt:
-
 tensorflow==2.15.0
 scikit-learn==1.3.2
 numpy==1.26.4
