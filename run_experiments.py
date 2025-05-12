@@ -5,7 +5,7 @@ from src.train import train_and_evaluate
 
 def run_experiments():
     """
-    Run experiments for MLP and CNN on MNIST, Fashion-MNIST, and CIFAR-10.
+    Эксперименты для MLP и CNN на MNIST, Fashion-MNIST и CIFAR-10.
     """
     datasets = ["mnist", "fashion_mnist", "cifar10"]
     epochs = {"mnist": 5, "fashion_mnist": 20, "cifar10": 30}

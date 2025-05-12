@@ -4,13 +4,13 @@ import numpy as np
 
 def load_and_preprocess_data(dataset_name):
     """
-    Load and preprocess dataset (MNIST, Fashion-MNIST, or CIFAR-10).
+    Загрузить и предварительно обработать набор данных (MNIST, Fashion-MNIST или CIFAR10).
 
-    Args:
-        dataset_name (str): Name of the dataset ('mnist', 'fashion_mnist', 'cifar10')
+    Аргументы:
+        dataset_name (str): Название набора данных ('mnist', 'fashion_mnist', 'cifar10')
 
-    Returns:
-        tuple: (X_train, y_train, X_test, y_test) preprocessed data
+    Возвращается:
+        tuple: (X_train, y_train, X_test, y_test) предварительно обработанные данные
     """
     if dataset_name == "mnist":
         (X_train, y_train), (X_test, y_test) = tf.keras.datasets.mnist.load_data()

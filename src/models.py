@@ -3,13 +3,13 @@ import tensorflow as tf
 
 def build_mlp(input_shape):
     """
-    Build a Multi-Layer Perceptron model.
+    Создать многослойную модель персептрона.
 
-    Args:
-        input_shape (tuple): Shape of input data (e.g., (28, 28, 1) for MNIST)
+    Аргументы:
+        input_shape (кортеж): Форма входных данных (например, (28, 28, 1) для MNIST)
 
-    Returns:
-        tf.keras.Model: MLP model
+    Результат:
+        tf.keras.Модель: модель MLP
     """
     model = tf.keras.Sequential(
         [
@@ -23,12 +23,12 @@ def build_mlp(input_shape):
 
 def build_cnn(input_shape):
     """
-    Build a Convolutional Neural Network model.
+    Создать сверточную модель нейронной сети.
 
-    Args:
-        input_shape (tuple): Shape of input data (e.g., (32, 32, 3) for CIFAR-10)
+    Аргументы:
+        input_shape (кортеж): форма входных данных (например, (32, 32, 3) для CIFAR-10)
 
-    Returns:
+    Результат:
         tf.keras.Model: CNN model
     """
     model = tf.keras.Sequential(

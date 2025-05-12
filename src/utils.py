@@ -4,12 +4,12 @@ import os
 
 def plot_training_history(history, dataset_name, model_name):
     """
-    Plot training and validation accuracy/loss.
+    Обучение пилота и проверка точности/потери.
 
-    Args:
-        history: Keras training history
-        dataset_name (str): Name of dataset
-        model_name (str): Name of model
+    Аргументы:
+        история: История обучения Keras
+        dataset_name (str): Название набора данных
+        model_name (str): Название модели.
     """
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4))
 

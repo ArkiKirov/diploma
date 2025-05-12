@@ -15,19 +15,19 @@ def train_and_evaluate(
     batch_size=32,
 ):
     """
-    Train and evaluate a model.
+    Обучите и оцените модель.
 
-    Args:
-        model: Keras model to train
-        X_train, y_train: Training data and labels
-        X_test, y_test: Test data and labels
-        dataset_name (str): Name of dataset
-        model_name (str): Name of model ('mlp' or 'cnn')
-        epochs (int): Number of training epochs
-        batch_size (int): Batch size
+     Аргументы:
+         model: модель Keras для обучения
+         X_train, y_train: Обучающие данные и метки
+         X_test, y_test: Тестовые данные и метки
+         dataset_name (str): Название набора данных
+         model_name (str): Название модели ('mlp' или 'cnn')
+         epochs (int): Количество периодов обучения
+         batch_size (int): Размер пакета
 
-    Returns:
-        dict: Training history
+     Результат:
+         dict: История тренировки
     """
     model.compile(
         optimizer="adam", loss="categorical_crossentropy", metrics=["accuracy"]
@@ -52,6 +52,8 @@ def train_and_evaluate(
     model.save(f"models/{dataset_name}_{model_name}.h5")
 
     # Plot training history
-    plot_training_history(history, dataset_name, model_name)
+    plot_training_history(
+        history.history, dataset_name, model_name
+    )  # Исправлено: history.history
 
     return history.history
